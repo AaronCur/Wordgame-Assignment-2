@@ -1,0 +1,29 @@
+ {% extends "base.html" %}
+
+ {% block the_body %}
+        <h2>Welcome to my Word Game on the web</h2>
+        <p>
+        <h3>How to play...</h3>
+        <p>You will be provided with a word of seven letters or more which we'll
+          call the "sourceword". You are then to think up seven three-or-more letter
+          words made up from the letters contained within the sourceword, ensuring that:
+        </p>
+        <ol>
+            <li>Each word is only made up from the letters contained within the <i>sourceword</i>.
+            <li>Each word exists within the dictionary (i.e., it's a “real” word).
+            <li>The words all have three letters or more.
+            <li>There are no duplicate words.
+            <li>None of the seven words is the source word.
+            <li>And don't forget: case is NOT significiant (Pet, PET, and pet are the *same* word).
+        </ol>
+
+        <form action='/processform' method="POST">
+            <tr>
+                <td><input type="submit" value="Start!"></td>
+            </tr>
+
+        </form>
+
+
+
+ {% endblock %}

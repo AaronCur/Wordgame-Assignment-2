@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+<h2>Let's get busy!</h2>
+<p>The clock is ticking ...</p>
+<p>Your word is: <b>{{the_ranword}}</b><p>
+<p>Enter your seven words in this box, seperating each word with a space:</p>
+
+  <form action='/processinput' method="POST">
+        <tr>
+            <td><input type="text" name="input"></td>
+           <p>  <td><input type="submit" value="Done!"></td> </p>
+        </tr>
+  </form>
+{% endblock %}

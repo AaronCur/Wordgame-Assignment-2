@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+<h2>You're a winner!</h2>
+<ul>
+  <li>Congratulations!Your time is <b>{{the_time}}</b> .
+</ul>
+<p>Enter your name below.</p>
+  <form action='/highscores' method="POST">
+    <p>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <p>
+            <td><input type="submit" value="Record your Score!"></td>
+          </p>
+        </tr>
+  </p>
+
+
+{% endblock %}

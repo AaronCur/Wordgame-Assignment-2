@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+<p>You placed <b>{{the_position}}</b> out of <b>{{the_total}}</b> people</p>
+
+<table>
+<TR>
+  <TD> <b> Who? </b></TD>
+  <TD> <b> Time </b></TD>
+{% for key1, value1 in the_leaderboard.items()%}
+<TR>
+   <TD>{{value1}}</TD>
+   <TD>{{key1}}</TD>
+</TR>
+{% endfor %}
+</table>
+
+<form action='/processform' method="POST">
+      <tr>
+         <p>  <td><input type="submit" value="Play Again!"></td> </p>
+      </tr>
+</form>
+<form action='/getform'>
+      <tr>
+         <p>  <td><input type="submit" value="Review the rules"></td> </p>
+      </tr>
+</form>
+
+{% endblock %}

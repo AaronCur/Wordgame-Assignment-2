@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+
+  <h2> <b>Errors </b></h2>
+{% for key1 in errors%}
+<UL>
+   <LI>{{key1}}</LI>
+</UL>
+{% endfor %}
+
+<p><h2> Better luck next time </h2><p>
+  <form action='/processform' method="POST">
+        <tr>
+           <p>  <td><input type="submit" value="Play Again!"></td> </p>
+        </tr>
+  </form>
+  <form action='/getform'>
+        <tr>
+           <p>  <td><input type="submit" value="Review the rules"></td> </p>
+        </tr>
+  </form>
+
+
+{% endblock %}

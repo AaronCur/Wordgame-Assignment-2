@@ -1,0 +1,11 @@
+Hello thank you for selecting my game.
+
+I realise my input method isnt the same as other students so im putting this here to let you know how it works
+The game will ask you for your name initially.
+After this the random word will be displayed and player will be asked for a guess
+
+
+The player can only input one input ONE word at a time.
+
+The system will display the current guesses if the word is valid.
+If not an appropriate error message will be displayed.
